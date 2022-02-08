@@ -43,12 +43,12 @@ export default function Projects({ projectsRef }) {
                                 <div className="w-[100%] mt-2">
                                     {isAlive &&
                                         <button className="w-[100px] h-[35px] rounded bg-blue-500 hover:bg-blue-600">
-                                            <a href={link} target="_blank">Vist</a>
+                                            <a href={link} target="_blank" rel="noreferrer">Vist</a>
                                         </button>
                                     }
                                     {source_code &&
                                         <button className="w-[100px] h-[35px] rounded border sm:mt-0 sm:ml-2 md:ml-2 md:mt-0 border-blue-500 hover:border-blue-600">
-                                            <a href={source_code} target="_blank">Source</a>
+                                            <a href={source_code} target="_blank" rel="noreferrer">Source</a>
                                         </button>
                                     }
                                 </div>
