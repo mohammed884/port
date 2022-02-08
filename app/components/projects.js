@@ -1,4 +1,4 @@
-import Img from 'next/image';
+import Image from 'next/image';
 export default function Projects({ projectsRef }) {
     const projects = [
         {
@@ -33,7 +33,7 @@ export default function Projects({ projectsRef }) {
                 {
                     projects.map(({ title, image, isAlive, description, link, source_code }, index) =>
                         <div key={index} className="sm:w-[70%] md:w-[85%] lg:w-[65%] justify-self-center relative" onMouseLeave={() => isDescriptionAppear(false, index)} onMouseEnter={() => isDescriptionAppear(true, index)}>
-                            <Img src={`/images/${image}`} className="rounded object-cover object-center aspect-square" alt={title} width="500" height="500" layout='responsive' />
+                            <Image src={`/images/${image}`} className="rounded object-cover object-center aspect-square" alt={title} width="500" height="500" layout='responsive' />
                             <div className={`${index} w-[105%] h-[105%] left-[50%] text-center bg-bg_primary top-[50%] translate-x-[-50%] translate-y-[-50%] absolute opacity-0`}></div>
                             <div className={`${index} sm:w-[93%] md:w-[85%] lg:w-[100%] left-[50%] text-center top-[50%] translate-x-[-50%] translate-y-[-50%] text-white absolute hidden`}>
                                 <h1 className="font-bold sm:text-2xl md:text-2xl mb-3">{title}</h1>

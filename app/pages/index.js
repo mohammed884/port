@@ -88,7 +88,7 @@ export default function Home() {
         <div className="sm:w-[25px] md:w-[30px] h-[35vh] flex flex-col justify-between fixed sm:right-2 md:right-6 top-[40%] ">
           {
             socialLinks.map(({ link, title, icon }, index) =>
-              <a href={link} title={title} target="_blank" key={index} className="text-slate-200 hover:text-gray-400">
+              <a href={link} title={title} rel="noreferrer" target="_blank" key={index} className="text-slate-200 hover:text-gray-400">
                 <FontAwesomeIcon icon={icon} />
               </a>
             )
