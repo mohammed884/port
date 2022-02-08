@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Cairo:wght@800&family=Fuzzy+Bubbles:wght@700&family=Nanum+Gothic+Coding:wght@700&family=Roboto:wght@300&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+button, input, textarea {
+  outline: none;
+}
+header ul li a {
+  color: #DBDBDB;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .why_me_card {
+    @apply flex sm:mt-4 sm:flex-col sm:h-[w-40vh] md:w-[50vh]  lg:flex-row lg:w-[70%] xl:w-[50%] lg:h-[30vh]
+  }
+  .contact_form {
+    @apply mx-auto lg:w-[55%] mt-10 flex flex-col
+  }
+  .contact_form p {
+    @apply text-slate-50 text-[1.2rem] mb-3 mt-3
+  }
+  .contact_form input {
+    @apply h-[35px] 
+    rounded 
+    border 
+    border-blue-500 
+    text-slate-100 
+    bg-bg_primary 
+    p-2 w-[300px] 
+    focus:border-blue-800
+    duration-200
+    transition
+  }
+  .contact_form input, .contact_form textarea {
+    @apply
+    bg-bg_primary 
+    rounded 
+    p-2
+    border 
+    border-blue-500 
+    text-slate-100 
+    focus:border-blue-800
+    duration-200
+    transition
+  }
+}
