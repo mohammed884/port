@@ -5,19 +5,19 @@ export default function Why_me({ whyMeRef, setIsWinner, setWinnerMessage }) {
             <p className="text-slate-200 text-[.9rem] mt-2">Good Question :-)</p>
             <div className="flex flex-col items-center mt-6">
                 <div className="why_me_card">
-                    <img src="/svgs/step.svg" alt="Step By Step" loading="lazy" className="sm:h-[170px] md:h-[200px] lg:w-[300px]" />
+                    {/* <img src="/svgs/step.svg" alt="Step By Step" loading="lazy" className="sm:h-[170px] md:h-[200px] lg:w-[300px]" /> */}
                     <div className="w-[88%] text-left">
                         <h3 className="text-text_primary font-bold text-[1.25rem] sm:mt-5 md:mt-3 lg:mt-0 mb-2">
                             Step By Step
                         </h3>
-                        <p className="text-slate-300">
+                        <p>
                             First Time you Make a Website? or had a bad experience before? Don't Worry! I'll Walk You Through Everystep in the process From
                             <span className="font-bold text-slate-100"> Scratch 0️⃣ to the Deployment 💯</span>
                         </p>
                     </div>
                 </div>
                 <div className="why_me_card">
-                    <img src="/svgs/deadLines.svg" alt="Dead Line Svg" loading="lazy" className="sm:h-[200px] sm:mt-5 md:block lg:hidden" />
+                    {/* <img src="/svgs/deadLines.svg" alt="Dead Line Svg" loading="lazy" className="sm:h-[200px] sm:mt-5 md:block lg:hidden" /> */}
                     <div className="w-[88%] text-left">
                         <h3 className="text-text_primary font-bold text-[1.25rem] sm:mt-5 md:mt-3 lg:mt-0 mb-2">
                             Dead Line
@@ -40,7 +40,7 @@ export default function Why_me({ whyMeRef, setIsWinner, setWinnerMessage }) {
                     <img src="/svgs/deadLines.svg" alt="Dead Line Svg" loading="lazy" className="sm:hidden lg:block lg:w-[300px]" />
                 </div>
                 <div className="why_me_card">
-                    <img src="/svgs/goodProduct.svg" alt="Good Product!" loading="lazy" className="sm:h-[170px] sm:mt-5 md:h-[200px] lg:w-[300px]" />
+                    {/* <img src="/svgs/goodProduct.svg" alt="Good Product!" loading="lazy" className="sm:h-[170px] sm:mt-5 md:h-[200px] lg:w-[300px]" /> */}
                     <div className="w-[88%] text-left">
                         <h3 className="text-text_primary font-bold text-[1.25rem] sm:mt-5 md:mt-3 lg:mt-0 mb-2">
                             The Finished Product

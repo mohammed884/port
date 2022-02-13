@@ -27,7 +27,6 @@ export default function Projects({ projectsRef }) {
         <div className="w-[85%] min-h-[100vh] mx-auto text-center" ref={projectsRef}>
             <div>
                 <h1 className="text-text_primary sm:text-3xl md:text-4xl mx-auto font-bold">Checkout My Projects 🌎</h1>
-                <p className="text-slate-400 mx-auto">Projects i've Made With Love 💘</p>
             </div>
             <div className="md:w-[100%] mx-auto grid sm:grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 mt-5">
                 {

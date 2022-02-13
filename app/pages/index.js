@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/header'
+import Image from 'next/image';
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -152,14 +153,12 @@ export default function Home() {
             </motion.div>
           </div>
           <div className="sm:w[35%] md:w-[40%] md:block sm:hidden">
-            <img src="/svgs/home.svg"
+            <Image src="/svgs/home.svg"
               alt="home svg"
               loading='lazy'
-              className="
-                        md:w-[230px] 
-                        md:h-[230px]
-                        xl:w-[390px]
-                        xl:h-[380px]"/>
+              width="390"
+              height="380"
+              responsive="true"/>
           </div>
         </div>
         <Projects projectsRef={projectsRef} />
