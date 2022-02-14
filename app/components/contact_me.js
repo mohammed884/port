@@ -4,7 +4,8 @@ export default function Contact_me({ contactRef }) {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
-    const [resMessage, setResMessage] = useState({ message: '', done: false });
+    const [errMessage, setErrMessage] = useState('');
+    const [succMessage, setSuccMessage] = useState('');
     const handleSubmit = async (e) => {
         e.preventDefault();
         const data = {
@@ -13,17 +14,29 @@ export default function Contact_me({ contactRef }) {
             message,
         };
         const res = await axios.post('/api/email', data);
-        if (!res.data.done) setResMessage({ message: res.data.err, done: false });
-        else setResMessage({ message: 'Email Sentet Succesfly!', done: true })
+        if (!res.data.done) {
+            setErrMessage(res.data.err);
+            setSuccMessage('');
+        }
+        else {
+            setSuccMessage('Email Sentet Succesfly!');
+            setErrMessage('')
+        }
     }
     return (
         <div className="w-[85%] sm:h-[86vh] md:h-[60vh] mx-auto sm:mt-20 md:mt-10 lg:mt-0" ref={contactRef}>
             <h1 className="text-4xl text-text_primary font-bold mx-auto text-center">Intrested? Contact me 📩</h1>
             <form onSubmit={handleSubmit} className="contact_form">
                 {
-                    resMessage.message &&
-                    <h3 className={`text-2xl font-bold text-${resMessage.done ?'blue-600':'red-500'}`}>
-                        {resMessage.message}
+                    errMessage &&
+                    <h3 className="text-2xl font-bold text-red-500">
+                        {errMessage}
+                    </h3>
+                }
+                {
+                    succMessage &&
+                    <h3 className="text-2xl font-bold text-blue-500">
+                        {succMessage}
                     </h3>
                 }
                 <label>
