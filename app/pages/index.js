@@ -137,6 +137,7 @@ export default function Home() {
                 <motion.span className="text-xl" onDoubleClick={() => {
                   setIsWinner(true);
                   setWinnerMessage(`You Have discoverd the secret discount code happy -5% off on your next project! Code is (i'm Lucky)`)
+                  homeRef.current.scrollIntoView({behavior: 'smooth' })
                 }}>
                   💖
                 </motion.span>
