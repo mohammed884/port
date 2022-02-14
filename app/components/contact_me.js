@@ -13,7 +13,7 @@ export default function Contact_me({ contactRef }) {
             subject,
             message,
         };
-        const res = await axios.post('https://mohammed-portfolio0.vercel.app/api/email', data);
+        const res = await axios.post('/api/email', data);
         if (!res.data.done) {
             setErrMessage(res.data.err);
             setSuccMessage('');
