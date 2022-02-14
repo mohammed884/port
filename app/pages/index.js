@@ -157,8 +157,8 @@ export default function Home() {
             <Image src="/svgs/home.svg"
               alt="home svg"
               loading='lazy'
-              width="390"
-              height="380"
+              width="375"
+              height="375"
               responsive="true"/>
           </div>
         </div>
