@@ -1,10 +1,12 @@
 import nodemailer from 'nodemailer';
 import joi from 'joi';
-export default async function handler(req, res) {
+export default async function (req, res) {
   const { method } = req;
   const { subject, message, email } = req.body;
   const { MY_EMAIL, MY_PASSWORD } = process.env;
-
+  if (method === 'GET') {
+    res.json({message:'hello'})
+  }
   if (method === 'POST') {
     const emailSchema = joi.object({
       subject: joi.string().min(3).max(30).required(),
