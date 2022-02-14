@@ -86,7 +86,7 @@ export default function Home() {
           whyMeRef={whyMeRef}
         />
         {/* Links */}
-        <div className="sm:w-[20px] md:w-[28px] h-[35vh] flex flex-col justify-between fixed sm:right-2 md:right-6 top-[40%] ">
+        <div className="sm:w-[20px] md:w-[27px] h-[35vh] flex flex-col justify-between fixed sm:right-2 md:right-5 top-[40%] ">
           {
             socialLinks.map(({ link, title, icon }, index) =>
               <a href={link} title={title} rel="noreferrer" target="_blank" key={index} className="text-slate-200 hover:text-gray-400">
