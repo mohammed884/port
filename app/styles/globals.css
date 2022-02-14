@@ -38,13 +38,16 @@ header ul li a {
     @apply text-slate-50 text-[1.2rem] mb-3 mt-3
   }
   .contact_form input {
-    @apply h-[35px] 
+    @apply 
+    h-[35px] 
     rounded 
     border 
     border-blue-500 
     text-slate-100 
     bg-bg_primary 
-    p-2 w-[300px] 
+    p-2 
+    sm:w-[90%]
+    md:w-[300px] 
     focus:border-blue-800
     duration-200
     transition

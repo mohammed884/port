@@ -81,12 +81,12 @@ export default function Header({ homeRef, whyMeRef, contactRef, projectsRef }) {
                 &&
                 <ul className={`
                 w-[85%] 
-                h-[330px]
+                h-[350px]
                 bg-bg_primary
                 overflow-hidden
                 sm:flex
                 sm:flex-col
-                sm:justify-between
+                sm:justify-around
                 lg:hidden
                 mx-auto
                 z-30`}>

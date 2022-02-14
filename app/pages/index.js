@@ -86,7 +86,7 @@ export default function Home() {
           whyMeRef={whyMeRef}
         />
         {/* Links */}
-        <div className="sm:w-[25px] md:w-[30px] h-[35vh] flex flex-col justify-between fixed sm:right-2 md:right-6 top-[40%] ">
+        <div className="sm:w-[20px] md:w-[30px] h-[35vh] flex flex-col justify-between fixed sm:right-2 md:right-6 top-[40%] ">
           {
             socialLinks.map(({ link, title, icon }, index) =>
               <a href={link} title={title} rel="noreferrer" target="_blank" key={index} className="text-slate-200 hover:text-gray-400">
@@ -96,7 +96,7 @@ export default function Home() {
           }
         </div>
 
-        <div className="w-[85%] h-[100vh] flex sm:flex-col md:flex-row sm:justify-around md:justify-between items-center relative mx-auto" ref={homeRef}>
+        <div className="w-[85%] sm:h-[140vh] md:h-[100vh] flex sm:flex-col md:flex-row sm:justify-around md:justify-between items-center relative mx-auto" ref={homeRef}>
           {
             isWinner
             &&
@@ -107,7 +107,7 @@ export default function Home() {
               exit="exit"
               className="
                 md:absolute 
-                sm:h-[15vh]
+                sm:h-fit-content
                 md:w-[60vh] 
                 md:h-[12vh]
                 md:mb-16

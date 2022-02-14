@@ -35,18 +35,18 @@ export default function Projects({ projectsRef }) {
                             <Image src={`/images/${image}`} className="rounded object-cover object-center aspect-square" alt={title} width="500" height="500" layout='responsive' />
                             <div className={`${index} w-[105%] h-[105%] left-[50%] text-center bg-bg_primary top-[50%] translate-x-[-50%] translate-y-[-50%] absolute opacity-0`}></div>
                             <div className={`${index} sm:w-[93%] md:w-[85%] lg:w-[100%] left-[50%] text-center top-[50%] translate-x-[-50%] translate-y-[-50%] text-white absolute hidden`}>
-                                <h1 className="font-bold sm:text-2xl md:text-2xl mb-3">{title}</h1>
-                                <div className="mx-auto w-[80%] overflow-hidden h-[40%]">
+                                <h1 className="font-bold sm:text-xl md:text-2xl mb-3">{title}</h1>
+                                <div className="mx-auto sm:text-sm w-[80%] overflow-hidden h-[40%]">
                                     <p className="text-slate-100">{description}</p>
                                 </div>
                                 <div className="w-[100%] mt-2">
                                     {isAlive &&
-                                        <button className="w-[100px] h-[35px] rounded bg-blue-500 hover:bg-blue-600">
+                                        <button className="sm:w-[80px] sm:h-[30px] md:w-[100px] md:h-[35px] rounded bg-blue-500 hover:bg-blue-600">
                                             <a href={link} target="_blank" rel="noreferrer">Vist</a>
                                         </button>
                                     }
                                     {source_code &&
-                                        <button className="w-[100px] h-[35px] rounded border sm:mt-0 sm:ml-2 md:ml-2 md:mt-0 border-blue-500 hover:border-blue-600">
+                                        <button className="sm:w-[80px] sm:h-[30px] md:w-[100px] md:h-[35px] text-sm rounded border sm:mt-0 sm:ml-2 md:ml-2 md:mt-0 border-blue-500 hover:border-blue-600">
                                             <a href={source_code} target="_blank" rel="noreferrer">Source</a>
                                         </button>
                                     }
