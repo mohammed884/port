@@ -96,7 +96,7 @@ export default function Home() {
           }
         </div>
 
-        <div className="w-[85%] h-[100vh] flex justify-between items-center relative mx-auto" ref={homeRef}>
+        <div className="w-[85%] h-[100vh] flex sm:flex-col md:flex-row sm:justify-around md:justify-between items-center relative mx-auto" ref={homeRef}>
           {
             isWinner
             &&
@@ -106,7 +106,7 @@ export default function Home() {
               animate="visible"
               exit="exit"
               className="
-                absolute 
+                md:absolute 
                 sm:h-[15vh]
                 md:w-[60vh] 
                 md:h-[12vh]

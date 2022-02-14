@@ -1,5 +1,5 @@
 import Image from "next/image"
-export default function Why_me({ whyMeRef, setIsWinner, setWinnerMessage }) {
+export default function Why_me({ whyMeRef, setIsWinner, setWinnerMessage, homeRef }) {
     return (
         <div className="w-[85%] min-h-[100vh] mx-auto text-center mt-5" ref={whyMeRef}>
             <h1 className="text-text_primary sm:text-3xl md:text-4xl mx-auto font-bold">Why Me 🤔</h1>
