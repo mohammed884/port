@@ -6,7 +6,7 @@ export default function Why_me({ whyMeRef, setIsWinner, setWinnerMessage, homeRe
             <p className="text-slate-200 text-[.9rem] mt-2">Good Question :-)</p>
             <div className="flex flex-col items-center mt-6">
                 <div className="why_me_card">
-                    <Image src="/svgs/step.svg" alt="Step By Step" width="300" height="300" responisve="true" />
+                    <Image src="/svgs/step.svg" alt="Step By Step" width="350" height="350" responisve="true" />
                     <div className="w-[88%] text-left md:ml-3">
                         <h3 className="text-text_primary font-bold text-[1.25rem] sm:mt-5 md:mt-3 lg:mt-0 mb-2">
                             Step By Step
@@ -18,7 +18,7 @@ export default function Why_me({ whyMeRef, setIsWinner, setWinnerMessage, homeRe
                     </div>
                 </div>
                 <div className="why_me_card">
-                    <img src="/svgs/deadLines.svg" className="sm:w-[300px] sm:block md:hidden" alt="Step By Step" width="300" height="300" responisve="true" />
+                    <img src="/svgs/deadLines.svg" className="sm:w-[300px] sm:block lg:hidden" alt="Step By Step" loading="lazy"/>
                     <div className="w-[88%] text-left md:ml-3">
                         <h3 className="text-text_primary font-bold text-[1.25rem] sm:mt-5 md:mt-3 lg:mt-0 mb-2">
                             Dead Line
@@ -33,10 +33,10 @@ export default function Why_me({ whyMeRef, setIsWinner, setWinnerMessage, homeRe
                             </span>
                         </p>
                     </div>
-                    <img src="/svgs/deadLines.svg" alt="Dead Line Svg" loading="lazy" className="sm:hidden lg:block lg:w-[300px]" />
+                    <img src="/svgs/deadLines.svg" className="sm:hidden lg:block lg:w-[300px]" alt="Dead Line Svg" loading="lazy"/>
                 </div>
                 <div className="why_me_card">
-                    <img src="/svgs/goodProduct.svg" alt="Step By Step" width="300" height="300" responisve="true" />
+                    <Image src="/svgs/goodProduct.svg" alt="Step By Step" width="350" height="350" responisve="true"/>
 
                     <div className="w-[88%] text-left md:ml-3">
                         <h3 className="text-text_primary font-bold text-[1.25rem] sm:mt-5 md:mt-3 lg:mt-0 mb-2">
