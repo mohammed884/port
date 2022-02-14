@@ -153,7 +153,7 @@ export default function Home() {
               <FontAwesomeIcon icon={faArrowDown} className="cursor-pointer" />
             </motion.div>
           </div>
-          <div className="sm:w[35%] md:w-[40%] md:block sm:hidden">
+          <div className="sm:w[35%] md:w-[37%] md:block sm:hidden">
             <Image src="/svgs/home.svg"
               alt="home svg"
               loading='lazy'
