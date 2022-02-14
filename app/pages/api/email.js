@@ -11,7 +11,7 @@ export default async (req, res) => {
       email: joi.string().email().min(3).max(150).lowercase().required(),
     });
     try {
-      await emailSchema.validateAsync({ subject, message, email })
+      await emailSchema.validateAsync({ subject, message, email: email.replace(/' '/g, '') })
       var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -21,8 +21,8 @@ export default async (req, res) => {
       });
 
       var mailOptions = {
-        from: email,
-        to: MY_EMAIL,
+        from: MY_EMAIL,
+        to: email,
         subject: subject,
         text: message
       };
