@@ -13,7 +13,7 @@ export default function Contact_me({ contactRef }) {
             subject,
             message,
         };
-        const res = await axios.post('/api/email', data);
+        const res = await axios.post('https://mohammed-portfolio0.vercel.app/api/email', data);
         if (!res.data.done) {
             setErrMessage(res.data.err);
             setSuccMessage('');
@@ -52,7 +52,7 @@ export default function Contact_me({ contactRef }) {
                     <textarea type="text" onChange={e => setMessage(e.target.value)} className="sm:w-[90%] md:w-[400px]"></textarea>
                 </label>
                 <br />
-                <button type="submit" className="sm:mt-4 md:mt-0 bg-blue-600 hover:bg-blue-700 w-[110px] rounded h-[35px] text-text_primary">Send</button>
+                <button type="submit" className="sm:mt-5 md:mt-0 bg-blue-600 hover:bg-blue-700 w-[110px] rounded h-[35px] text-text_primary">Send</button>
             </form>
         </div>
     );
