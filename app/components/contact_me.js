@@ -17,7 +17,7 @@ export default function Contact_me({ contactRef }) {
         else setResMessage({ message: 'Email Sentet Succesfly!', done: true })
     }
     return (
-        <div className="w-[85%] h-[60vh] mx-auto sm:mt-20 md:mt-10 lg:mt-0" ref={contactRef}>
+        <div className="w-[85%] sm:h-[70vh] md:h-[60vh] mx-auto sm:mt-20 md:mt-10 lg:mt-0" ref={contactRef}>
             <h1 className="text-4xl text-text_primary font-bold mx-auto text-center">Intrested? Contact me 📩</h1>
             <form onSubmit={handleSubmit} className="contact_form">
                 {
