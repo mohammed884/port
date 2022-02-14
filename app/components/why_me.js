@@ -12,7 +12,7 @@ export default function Why_me({ whyMeRef, setIsWinner, setWinnerMessage, homeRe
                             Step By Step
                         </h3>
                         <p className="text-slate-300 md:ml-3">
-                            First Time you Make a Website? or had a bad experience before? Don NOT Worry! I will Walk You Through Everystep in the process From
+                            First Time you Make a Website? or had a bad experience before? Do NOT Worry! I will Walk You Through Everystep in the process From
                             <span className="font-bold text-slate-100"> Scratch 0️⃣ to the Deployment 💯</span>
                         </p>
                     </div>
