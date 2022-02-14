@@ -21,8 +21,8 @@ export default async (req, res) => {
       });
 
       var mailOptions = {
-        from: MY_EMAIL,
-        to: email,
+        from: email,
+        to: MY_EMAIL,
         subject: subject,
         text: message
       };
