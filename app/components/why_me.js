@@ -18,7 +18,7 @@ export default function Why_me({ whyMeRef, setIsWinner, setWinnerMessage, homeRe
                     </div>
                 </div>
                 <div className="why_me_card">
-                    <img src="/svgs/deadLines.svg" className="md:hidden sm:w-[300px]" alt="Step By Step" width="300" height="300" responisve="true" />
+                    <img src="/svgs/deadLines.svg" className="sm:w-[300px] sm:block md:hidden" alt="Step By Step" width="300" height="300" responisve="true" />
                     <div className="w-[88%] text-left md:ml-3">
                         <h3 className="text-text_primary font-bold text-[1.25rem] sm:mt-5 md:mt-3 lg:mt-0 mb-2">
                             Dead Line
