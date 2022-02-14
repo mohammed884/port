@@ -2,7 +2,7 @@
   "name": "app",
   "private": true,
   "scripts": {
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "dev": "next dev",
     "lint": "next lint"
