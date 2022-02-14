@@ -4,8 +4,10 @@ export default async function (req, res) {
   const { method } = req;
   const { subject, message, email } = req.body;
   const { MY_EMAIL, MY_PASSWORD } = process.env;
+  console.log(method);
   if (method === 'GET') {
-    res.json({message:'hello'})
+    res.status(200).json({ name: 'John Doe' })
+
   }
   if (method === 'POST') {
     const emailSchema = joi.object({
