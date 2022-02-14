@@ -19,10 +19,10 @@ export default async (req, res) => {
           pass: MY_PASSWORD
         }
       });
-
+      console.log(email);
       var mailOptions = {
-        from: email,
-        to: MY_EMAIL,
+        from: MY_EMAIL,
+        to: email,
         subject: subject,
         text: message
       };
