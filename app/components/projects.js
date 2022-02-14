@@ -24,7 +24,7 @@ export default function Projects({ projectsRef }) {
         }
     };
     return (
-        <div className="w-[85%] min-h-[100vh] mx-auto text-center" ref={projectsRef}>
+        <div className="w-[85%] min-h-[60vh] mx-auto text-center" ref={projectsRef}>
             <div>
                 <h1 className="text-text_primary sm:text-3xl md:text-4xl mx-auto font-bold">Checkout My Projects 🌎</h1>
             </div>

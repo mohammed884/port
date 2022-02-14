@@ -75,7 +75,7 @@ export default function Home() {
       <Head>
         <title>Mohammed Abdulaziz</title>
         <meta name="description" content="Hello i'm a Web Developer and content creator and this is my portfolio!/ مرحبا بالجميع انا مبرمج ويب وصانع محتوى الق نظرة على معرض اعمالي!" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.svg" />
       </Head>
 
       <main className="w-[100%] min-h-[100vh] bg-bg_primary" >

@@ -7,14 +7,13 @@ export default function Contact_me({ contactRef }) {
     const [resMessage, setResMessage] = useState({ message: '', done: false });
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const url = '/api/email';
         const data = {
             email,
             subject,
             message,
         };
-        const res = await axios.post(url, data);
-        if (!res.data) setResMessage({ message: res.data.err, done: false });
+        const res = await axios.post('/api/email', data);
+        if (!res.data.done) setResMessage({ message: res.data.err, done: false });
         else setResMessage({ message: 'Email Sentet Succesfly!', done: true })
     }
     return (
@@ -23,7 +22,7 @@ export default function Contact_me({ contactRef }) {
             <form onSubmit={handleSubmit} className="contact_form">
                 {
                     resMessage.message &&
-                    <h3 className={`text-2xl font-bold text-${resMessage.done ? 'blue-600' : 'red-500'}`}>{resMessage.message}
+                    <h3 className={`text-2xl font-bold text-${resMessage.done ?'blue-600':'red-500'}`}>
                         {resMessage.message}
                     </h3>
                 }
