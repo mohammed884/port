@@ -30,7 +30,7 @@ export default function Contact_me({ contactRef }) {
         setIsLoading(false);
     }
     return (
-        <div className="w-[85%] sm:h-[86vh] md:h-[60vh] mx-auto sm:mt-20 md:mt-10 lg:mt-0" ref={contactRef}>
+        <div className="w-[85%] sm:h-[90vh] md:h-[60vh] mx-auto sm:mt-20 md:mt-10 lg:mt-0" ref={contactRef}>
             <h1 className="text-4xl text-text_primary font-bold mx-auto text-center">Intrested? Contact me 📩</h1>
             <form onSubmit={handleSubmit} className="contact_form">
                 {
