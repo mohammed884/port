@@ -1,13 +1,18 @@
 import axios from 'axios';
-import { useState } from 'react'
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSpinner, } from '@fortawesome/free-solid-svg-icons';
 export default function Contact_me({ contactRef }) {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
     const [errMessage, setErrMessage] = useState('');
     const [succMessage, setSuccMessage] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+    const arr = []
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsLoading(true)
         const data = {
             email,
             subject,
@@ -22,6 +27,7 @@ export default function Contact_me({ contactRef }) {
             setSuccMessage('Email Sentet Succesfly!');
             setErrMessage('')
         }
+        setIsLoading(false);
     }
     return (
         <div className="w-[85%] sm:h-[86vh] md:h-[60vh] mx-auto sm:mt-20 md:mt-10 lg:mt-0" ref={contactRef}>
@@ -52,7 +58,28 @@ export default function Contact_me({ contactRef }) {
                     <textarea type="text" onChange={e => setMessage(e.target.value)} className="sm:w-[90%] md:w-[400px]"></textarea>
                 </label>
                 <br />
-                <button type="submit" className="sm:mt-5 md:mt-0 bg-blue-600 hover:bg-blue-700 w-[110px] rounded h-[35px] text-text_primary">Send</button>
+                <button type="submit" disabled={isLoading}
+                    className={`
+                    h-[35px] 
+                    w-[110px] 
+                    bg-blue-600
+                    opacity-${!isLoading ? '100' : '80'}
+                    hover:bg-blue-800 
+                    text-text_primary 
+                    rounded 
+                    sm:mt-5 
+                    md:mt-0 
+                `}>
+                    {
+                        !isLoading
+                            ?
+                            'Send'
+                            :
+                            <span className="z-0">
+                                <FontAwesomeIcon icon={faSpinner} className="w-[25px] mx-auto btn-loader" />
+                            </span>
+                    }
+                </button>
             </form>
         </div>
     );

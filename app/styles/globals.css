@@ -64,4 +64,16 @@ header ul li a {
     duration-200
     transition
   }
-}
+
+}  
+.btn-loader {
+    animation: rotate-btn .9s ease-in infinite;
+  }
+  @keyframes rotate-btn {
+    from {
+      transform:rotate(5deg);
+    }
+    to {
+      transform:rotate(360deg)
+    }
+  }
