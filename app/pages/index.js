@@ -17,7 +17,7 @@ export default function Home() {
   const projectsRef = useRef(null);
   const whyMeRef = useRef(null);
   const contactRef = useRef(null);
-  
+
   //VARIRENTS
   const arrowVarients = {
     hidden: {
@@ -78,7 +78,7 @@ export default function Home() {
         <link rel="icon" href="/logo.svg" />
       </Head>
 
-      <main className="w-[100%] min-h-[100vh] bg-bg_primary" >
+      <main className="w-[100%] min-h-[100vh] bg-bg_primary scroll-smooth">
         <Header
           homeRef={homeRef}
           contactRef={contactRef}
@@ -117,7 +117,7 @@ export default function Home() {
                 border-text_primary
                 top-[4.3rem] ">
               <h3 className="text-slate-200">
-                <span className="font-bold">Congrats! </span> 
+                <span className="font-bold">Congrats! </span>
                 {winnerMessage}
               </h3>
               <div className="mt-2">
@@ -137,7 +137,7 @@ export default function Home() {
                 <motion.span className="text-xl" onDoubleClick={() => {
                   setIsWinner(true);
                   setWinnerMessage(`You Have discoverd the secret discount code happy -5% off on your next project! Code is (i'm Lucky)`)
-                  homeRef.current.scrollIntoView({behavior: 'smooth' })
+                  homeRef.current.scrollIntoView({ behavior: 'smooth' })
                 }}>
                   💖
                 </motion.span>
@@ -159,11 +159,11 @@ export default function Home() {
               loading='lazy'
               width="375"
               height="375"
-              responsive="true"/>
+              responsive="true" />
           </div>
         </div>
         <Projects projectsRef={projectsRef} />
-        <Why_me whyMeRef={whyMeRef} setIsWinner={setIsWinner} setWinnerMessage={setWinnerMessage} homeRef={homeRef}/>
+        <Why_me whyMeRef={whyMeRef} setIsWinner={setIsWinner} setWinnerMessage={setWinnerMessage} homeRef={homeRef} />
         <Contact_me contactRef={contactRef} />
         <Footer />
       </main>
