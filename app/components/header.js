@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { motion } from 'framer-motion'
-export default function Header({ homeRef, whyMeRef, contactRef, projectsRef }) {
+export default function Header({ homeRef, whyMeRef, contactRef, projectsRef, skillsRef }) {
     const liVarients = {
         hidden: {
             x: -15,
@@ -16,13 +16,14 @@ export default function Header({ homeRef, whyMeRef, contactRef, projectsRef }) {
     const [isOpen, setIsOpen] = useState(false);
     const refs = [
         homeRef,
+        skillsRef,
         projectsRef,
         whyMeRef,
         contactRef,
-        homeRef,
     ];
     const links = [
         { path: '#home', title: 'Home' },
+        { path: '#skills', title: 'Skills & Technologies' },
         { path: '#project', title: 'Project', },
         { path: '#whyme', title: 'Why Me' },
         { path: '#contact', title: 'Contact Me', },
@@ -52,7 +53,8 @@ export default function Header({ homeRef, whyMeRef, contactRef, projectsRef }) {
                     }
                 </div>
                 <ul className={`
-                w-[50%] 
+                lg:w-[62%]
+                xl:w-[50%]
                 h-[100%] 
                 overflow-hidden
                 sm:hidden

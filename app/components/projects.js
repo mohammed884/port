@@ -1,5 +1,5 @@
 import Image from 'next/image';
-export default function Projects({ projectsRef }) {
+export default function Projects() {
     const projects = [
         {
             title: 'E-commerce Store',
@@ -11,7 +11,7 @@ export default function Projects({ projectsRef }) {
         },
     ];
     const isDescriptionAppear = (value, index) => {
-        const elements = document.getElementsByClassName(index); 
+        const elements = document.getElementsByClassName(index);
         if (value) {
             elements[0].classList.remove('opacity-0');
             elements[0].classList.add('opacity-90');
@@ -24,7 +24,7 @@ export default function Projects({ projectsRef }) {
         }
     };
     return (
-        <div className="w-[85%] min-h-[60vh] mx-auto text-center" ref={projectsRef}>
+        <div className="w-[85%] min-h-[60vh] mx-auto text-center">
             <div>
                 <h1 className="text-text_primary sm:text-3xl md:text-4xl mx-auto font-bold">Checkout My Projects 🌎</h1>
             </div>
@@ -37,15 +37,19 @@ export default function Projects({ projectsRef }) {
                             <div className={`${index} sm:w-[93%] md:w-[85%] lg:w-[100%] left-[50%] text-center top-[50%] translate-x-[-50%] translate-y-[-50%] text-white absolute hidden`}>
                                 <h1 className="font-bold sm:text-xl md:text-2xl mb-3">{title}</h1>
                                 <div className="mx-auto sm:text-sm w-[80%] overflow-hidden h-[40%]">
-                                    <p className="text-slate-100">{description}</p>
+                                    <p className="sm:text-sm lg:text-[.8rem] xl:text-[.97rem] text-slate-100">{description}</p>
                                 </div>
                                 <div className="w-[100%] mt-2">
-                                    {isAlive &&
+                                    {
+                                        isAlive
+                                        &&
                                         <button className="sm:w-[80px] sm:h-[30px] md:w-[100px] md:h-[35px] rounded bg-blue-500 hover:bg-blue-600">
                                             <a href={link} target="_blank" rel="noreferrer">Vist</a>
                                         </button>
                                     }
-                                    {source_code &&
+                                    {
+                                        source_code
+                                        &&
                                         <button className="sm:w-[80px] sm:h-[30px] md:w-[100px] md:h-[35px] text-sm rounded border sm:mt-0 sm:ml-2 md:ml-2 md:mt-0 border-blue-500 hover:border-blue-600">
                                             <a href={source_code} target="_blank" rel="noreferrer">Source</a>
                                         </button>
