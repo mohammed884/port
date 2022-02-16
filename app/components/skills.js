@@ -4,7 +4,7 @@ export default function Skills({ projectsRef }) {
         <div className="w-[85%] min-h-[100vh] mx-auto">
             <div className="mx-auto text-center h-fit">
                 <h1 className="text-4xl text-text_primary font-bold mb-3">Skills🔨</h1>
-                <span className="text-slate-300">What i'm Good At :-)</span>
+                <span className="text-slate-300">What i am Good At :-)</span>
             </div>
             <div className="cards-container">
                 <div className="skill-card">
@@ -14,7 +14,7 @@ export default function Skills({ projectsRef }) {
                     <h3>Web development</h3>
                     <div className="mt-3 sm:w-[80%] md:w-[100%]">
                         <p className="text-slate-300">
-                            I'm a Full-stack Web Developer With one and half year of Experience and i have Build Serveral <span onClick={() => projectsRef.current.scrollIntoView({ behavior: 'smooth' })} className="text-blue-500 hover:text-blue-600 cursor-pointer font-bold hover:underline">projects
+                            I am a Full-stack Web Developer With one and half year of Experience and i have Build Serveral <span onClick={() => projectsRef.current.scrollIntoView({ behavior: 'smooth' })} className="text-blue-500 hover:text-blue-600 cursor-pointer font-bold hover:underline">projects
                             </span> Ready for Production Check Them out!
                         </p>
                     </div>
@@ -25,7 +25,7 @@ export default function Skills({ projectsRef }) {
                         <Image src="/svgs/ui-ux.svg" width="300" height="300" responsive="true" />
                     </div>
                     <h3>Ui/Ux Design</h3>
-                    <p className="text-slate-300 mt-3">What a Good full-stack developer needs is Design Skills and i'm Ui/Ux Designer </p>
+                    <p className="text-slate-300 mt-3">What a Good full-stack developer needs is Design Skills and i am Ui/Ux Designer </p>
                 </div>
             </div>
             <div className="mx-auto text-center mt-3">
