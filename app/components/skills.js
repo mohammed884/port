@@ -14,7 +14,7 @@ export default function Skills({ projectsRef }) {
                     <h3>Web development</h3>
                     <div className="mt-3 sm:w-[80%] md:w-[100%]">
                         <p className="text-slate-300">
-                            I am a Full-stack Web Developer With one and half year of Experience and i have Build Serveral <span onClick={() => projectsRef.current.scrollIntoView({ behavior: 'smooth' })} className="text-blue-500 hover:text-blue-600 cursor-pointer font-bold hover:underline">projects
+                            I am a Full-stack Web Developer With Good Experience and i have Build Serveral <span onClick={() => projectsRef.current.scrollIntoView({ behavior: 'smooth' })} className="text-blue-500 hover:text-blue-600 cursor-pointer font-bold hover:underline">projects
                             </span> Ready for Production Check Them out!
                         </p>
                     </div>
