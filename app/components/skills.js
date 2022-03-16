@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { useLayoutEffect, useState } from "react"
+import { useLayoutEffect } from "react"
 export default function Skills({ projectsRef }) {
     // const [cards, setCards] = useState([]);
     useLayoutEffect(() => {

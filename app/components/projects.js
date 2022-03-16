@@ -74,7 +74,7 @@ export default function Projects() {
                                         source_code
                                         &&
                                         <button className="sm:w-[80px] sm:h-[30px] md:w-[100px] md:h-[35px] text-sm rounded border sm:mt-0 sm:ml-2 md:ml-2 md:mt-0 border-blue-500 hover:border-blue-600">
-                                            <a href={source_code} target="_blank" rel="noreferrer">المصدر</a>
+                                            <a href={source_code} target="_blank" rel="noreferrer">الكود</a>
                                         </button>
                                     }
                                 </div>
