@@ -14,7 +14,7 @@ export default function Skills({ projectsRef }) {
                 cardsObserver.unobserve(target);
             })
 
-        }, { threshold: .9 })
+        }, { threshold: .2 })
         for (let i = 0; i < cards.length; i++) cardsObserver.observe(cards[i])
 
     }, [])

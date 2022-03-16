@@ -38,11 +38,11 @@ export default function Projects() {
             entries.forEach((entry) => {
                 const { isIntersecting, target } = entry;
                 if (!isIntersecting) return;
-                target.classList.remove("translate-y-[18px]")
+                target.classList.remove("translate-y-[80px]")
                 cardsObserver.unobserve(target);
             })
 
-        }, { threshold: .9 })
+        }, { threshold: .3 })
         for (let i = 0; i < cards.length; i++) cardsObserver.observe(cards[i])
 
     })
@@ -54,7 +54,7 @@ export default function Projects() {
             <div className="md:w-[100%] mx-auto grid sm:grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 mt-5">
                 {
                     projects.map(({ title, image, isAlive, description, link, source_code }, index) =>
-                        <div key={index} className="project translate-y-[18px] sm:w-[85%] md:w-[85%] lg:w-[65%] justify-self-center relative" onMouseLeave={() => isDescriptionAppear(false, index)} onMouseEnter={() => isDescriptionAppear(true, index)}>
+                        <div key={index} className="project translate-y-[80px] sm:w-[85%] md:w-[85%] lg:w-[65%] justify-self-center relative" onMouseLeave={() => isDescriptionAppear(false, index)} onMouseEnter={() => isDescriptionAppear(true, index)}>
                             <Image src={`/images/${image}`} className="rounded  aspect-square" alt={title} width="500" height="500" layout='responsive' />
                             <div className={`${index} w-[105%] h-[105%] left-[50%] text-center bg-bg_primary top-[50%] translate-x-[-50%] translate-y-[-50%] absolute opacity-0`}></div>
                             <div className={`${index} sm:w-[93%] md:w-[85%] lg:w-[100%] left-[50%] text-center top-[50%] translate-x-[-50%] translate-y-[-50%] text-white absolute hidden`}>
