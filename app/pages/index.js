@@ -58,7 +58,7 @@ export default function Home() {
         <meta name="description" content="Hello i'm a Web Developer and content creator and this is my portfolio!/ مرحبا بالجميع انا مبرمج ويب وصانع محتوى الق نظرة على معرض اعمالي!" />
         <link rel="icon" href="/logo.svg" />
       </Head>
-      <main className="w-[100%] min-h-[100vh] bg-bg_primary scroll-smooth">
+      <main className="w-[100%] min-h-[100vh] bg-bg_primary scroll-smooth overflow-hidden">
         <Header
           homeRef={homeRef}
           contactRef={contactRef}
@@ -77,7 +77,7 @@ export default function Home() {
           }
         </div>
 
-        <div className="rtl w-[85%] h-[100vh] flex sm:flex-col md:flex-row sm:justify-around md:justify-between items-center relative mx-auto overflow-hidden" ref={homeRef}>
+        <div className="rtl w-[85%] h-[100vh] flex sm:flex-col md:flex-row sm:justify-around md:justify-between items-center relative mx-auto" ref={homeRef}>
           <div className="sm:w-[93%] md:w-[44%] rtl">
             <h1 className="sm:text-4xl md:text-4xl lg:text-4xl text-text_primary font-bold mb-2">
               <span className="text-3xl font-thin">مرحبا بالجميع👋</span>
