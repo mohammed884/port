@@ -23,7 +23,7 @@ export default function Home() {
   //VARIRENTS
   const arrowVarients = {
     hidden: {
-      x: -350,
+      x: 350,
     },
     visible: {
       x: 0,
@@ -44,11 +44,6 @@ export default function Home() {
       link: 'https://www.linkedin.com/in/mohammed-abdulaziz-964a8021b/',
       title: 'Linkedin',
       icon: faLinkedin,
-    },
-    {
-      link: 'https://www.youtube.com/channel/UCDi3iYOBUH0gWMH3ODvkSeQ',
-      title: 'Youtube',
-      icon: faYoutube,
     },
     {
       link: 'https://www.instagram.com/1kdd1/',
@@ -82,16 +77,23 @@ export default function Home() {
           }
         </div>
 
-        <div className="w-[85%] h-[100vh] flex sm:flex-col md:flex-row sm:justify-around md:justify-between items-center relative mx-auto" ref={homeRef}>
-          <div className="sm:w-[93%] md:w-[44%]" >
-            <h1 className="sm:text-4xl md:text-4xl lg:text-5xl text-text_primary mb-12 font-bold">Hello 👋,
+        <div className="rtl w-[85%] h-[100vh] flex sm:flex-col md:flex-row sm:justify-around md:justify-between items-center relative mx-auto overflow-hidden" ref={homeRef}>
+          <div className="sm:w-[93%] md:w-[44%] rtl">
+            <h1 className="sm:text-4xl md:text-4xl lg:text-4xl text-text_primary font-bold mb-2">
+              <span className="text-3xl font-thin">مرحبا بالجميع👋</span>
               <br />
-              I’m a Freelancer Web Developer
+              مطور و مصمم مواقع فريدة من نوعها
             </h1>
-            <p className="text-slate-300">
-              <span className="opacity-90">I’m Mohammed Abdulaziz i’m Web developer also i’m a content creator on instagram and youtube i teach people about programming</span>
+            <p className="text-slate-100 text-lg">
+              <span className="opacity-90">
+                اسمي محمد عبدالعزيز من العراق.
+                <br />
+                اشتغل بمجال الشغل الحر و اقوم بصناعة المحتوى عن البرمجة و التصميم و البزنز
+                <br />
+                سوف اقوم بمناقشة فكرة مشروعك و العمل عليها من اجل جعلها حقيقة بافضل صورة ممكنة
+              </span>
               <br />
-              <span className="font-bold mt-1">Scroll For More 💖</span>
+              <span className="text-[.9rem] font-bold mt-2">اضغط على السهم من اجل المزيد💖</span>
             </p>
             <motion.div
               variants={arrowVarients}
@@ -103,7 +105,7 @@ export default function Home() {
               <FontAwesomeIcon icon={faArrowDown} className="cursor-pointer" />
             </motion.div>
           </div>
-          <div className="md:w-[35%] md:block sm:hidden">
+          <div className="md:w-[35%] md:block sm:hidden rtl">
             <Image src="/svgs/home.svg"
               alt="home svg"
               loading='lazy'
@@ -112,7 +114,7 @@ export default function Home() {
               responsive="true" />
           </div>
         </div>
-        <div ref={skillsRef} className="h-16"></div>
+        <div ref={skillsRef} className="h-16 mb-4"></div>
         <Skills skillsRef={skillsRef} projectsRef={projectsRef} />
         <div ref={projectsRef} className="h-16"></div>
         <Projects />

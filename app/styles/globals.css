@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Cairo:wght@800&family=Fuzzy+Bubbles:wght@700&family=Nanum+Gothic+Coding:wght@700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Almarai:wght@700&family=Cairo:wght@400;800&family=Fuzzy+Bubbles:wght@700&family=Nanum+Gothic+Coding:wght@700&family=Roboto+Serif:wght@200;400&family=Roboto:wght@300;400&family=Sora:wght@300&display=swap');
 body {
   overscroll-behavior: none;
 }
@@ -6,7 +6,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cairo', sans-serif;
 }
 button, input, textarea {
   outline: none;
@@ -16,6 +16,9 @@ header ul li a {
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
+}
+.rtl {
+  direction: rtl;
 }
 @tailwind base;
 @tailwind components;
@@ -40,13 +43,22 @@ header ul li a {
   }
   .cards-container {
     @apply
-    w-[100%] h-[100%] grid sm:grid-cols-1 md:grid-cols-2 mx-auto
+    w-[100%] 
+    h-[100%] 
+    grid 
+    sm:grid-cols-1 
+    md:grid-cols-2 
+    mx-auto
   }
   .cards-container h3 {
     @apply
     text-slate-100 mx-auto mt-4 text-xl font-bold
   }
 }  
+.skill-card, .project {
+  transition: transform .2s ease-in-out;
+}
+
 .btn-loader {
     animation: rotate-btn .9s ease-in infinite;
   }

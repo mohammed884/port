@@ -22,11 +22,11 @@ export default function Header({ homeRef, whyMeRef, contactRef, projectsRef, ski
         contactRef,
     ];
     const links = [
-        { path: '#home', title: 'Home' },
-        { path: '#skills', title: 'Skills & Technologies' },
-        { path: '#project', title: 'Project', },
-        { path: '#whyme', title: 'Why Me' },
-        { path: '#contact', title: 'Contact Me', },
+        { path: '#home', title: 'الصفحة الرئيسية' },
+        { path: '#skills', title: 'المهارات و التقنيات' },
+        { path: '#project', title: 'المشاريع', },
+        { path: '#whyme', title: 'لماذا انا؟' },
+        { path: '#contact', title: 'تواصل معي', },
     ];
     const scrollDown = (index) => {
         if (!refs[index].current) return;
@@ -36,7 +36,7 @@ export default function Header({ homeRef, whyMeRef, contactRef, projectsRef, ski
     return (
         <header className="w-[100%] h-[60px] fixed z-20" style={{ background: '#02010A' }}>
 
-            <div className="w-[85%] h-[100%] mx-auto flex sm:items-center">
+            <div className="w-[85%] h-[100%] mx-auto flex sm:items-center rtl">
                 <div className="w-[1.2rem] sm:block lg:hidden">
                     {
                         !isOpen
@@ -53,6 +53,7 @@ export default function Header({ homeRef, whyMeRef, contactRef, projectsRef, ski
                     }
                 </div>
                 <ul className={`
+                rtl
                 lg:w-[62%]
                 xl:w-[50%]
                 h-[100%] 
@@ -82,6 +83,7 @@ export default function Header({ homeRef, whyMeRef, contactRef, projectsRef, ski
                 isOpen
                 &&
                 <ul className={`
+                rtl
                 w-[85%] 
                 h-[350px]
                 bg-bg_primary

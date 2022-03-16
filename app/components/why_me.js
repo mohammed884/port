@@ -2,32 +2,29 @@ import Image from "next/image"
 export default function Why_me() {
     return (
         <div className="w-[85%] min-h-[100vh] mx-auto text-center mt-5">
-            <h1 className="text-text_primary sm:text-3xl md:text-4xl mx-auto font-bold">Why Me 🤔</h1>
-            <p className="text-slate-200 text-[.9rem] mt-2">Good Question :-)</p>
+            <h1 className="w-[240px] h-[70px] bg-blue-600 text-4xl text-text_primary font-bold p-4 mx-auto rounded">🤔 لماذا انا</h1>
             <div className="flex flex-col items-center mt-6">
-                <div className="why-me-card">
+                <div className="why-me-card rtl">
                     <Image src="/svgs/step.svg" alt="Step By Step" width="350" height="350" responisve="true" />
-                    <div className="w-[88%] text-left md:ml-3">
+                    <div className="w-[88%] text-right md:ml-3 rtl">
                         <h3 className="text-text_primary font-bold text-[1.25rem] sm:mt-5 md:mt-3 lg:mt-0 mb-2">
-                            Step By Step
+                            خطوة بخطوة
                         </h3>
                         <p className="text-slate-300 md:ml-3">
-                            First Time you Make a Website? or had a bad experience before? Do NOT Worry! I will Walk You Through Everystep in the process From
-                            <span className="font-bold text-slate-100"> Scratch 0️⃣ to the Deployment 💯</span>
+                            اول مرة تقوم بطلب موقع او حظيت بتجربة سيئة من قبل؟ لا تقلق سوف امشي معك خطوة بخطوة بالعملية
+                            <span className="font-bold text-slate-100"> من التصميم 🧱 الى البرمجة الى رفع موقعك 🏡</span>
                         </p>
                     </div>
                 </div>
-                <div className="why-me-card">
+                <div className="why-me-card rtl">
                     <img src="/svgs/dead-lines.svg" className="sm:w-[300px] sm:block lg:hidden" alt="Step By Step" loading="lazy" />
-                    <div className="w-[88%] text-left md:ml-3">
+                    <div className="w-[88%] text-right md:ml-3">
                         <h3 className="text-text_primary font-bold text-[1.25rem] sm:mt-5 md:mt-3 lg:mt-0 mb-2">
-                            Dead Line
+                            موعد التسليم
                         </h3>
                         <p className="text-slate-300">
-                            One of the Most Important Thing To me and Properly You in the work are the Dead Lines So
-                            <span className="font-bold text-slate-100">
-                                i will Make Sure to NOT Miss it 🎯
-                            </span>
+                             واحد من اهم الامور في العمل بالنسبة الي هيه مواعين التسليم والالتزام بيها 
+                            <span className="font-bold text-slate-100"> تاكد انو ما راح افوته 🎯 </span>
                         </p>
                     </div>
                     <img src="/svgs/dead-lines.svg" className="sm:hidden lg:block lg:w-[300px]" alt="Dead Line Svg" loading="lazy" />
@@ -35,13 +32,14 @@ export default function Why_me() {
                 <div className="why-me-card">
                     <Image src="/svgs/good-product.svg" alt="Step By Step" width="350" height="350" responisve="true" />
 
-                    <div className="w-[88%] text-left md:ml-3">
-                        <h3 className="text-text_primary font-bold text-[1.25rem] sm:mt-5 md:mt-3 lg:mt-0 mb-2">
-                            The Finished Product
+                    <div className="w-[88%] md:ml-3">
+                        <h3 className="text-text_primary text-right font-bold text-[1.25rem] sm:mt-5 md:mt-3 lg:mt-0 mb-2">
+                            المنتج النهائي
                         </h3>
-                        <p className="text-slate-300">
-                            Why Your Product Gona be Good? cause i will Use The latest Technologies With My Experience To Make The finish Product
-                            <span className="font-bold text-slate-100"> Fast ⚡ & Scure 🔒</span>
+                        <p className="text-slate-300 text-right">
+                            لماذا سوف يكون منتجك النهائي جيد؟
+                            لاني سوف استخدم احدث التقنيات مع مهاراتي من اجل التاكد من ان المنتج سوف يكون
+                            <span className="font-bold text-slate-100"> سريع ⚡ و امن 🔒</span>
                         </p>
                     </div>
                 </div>
