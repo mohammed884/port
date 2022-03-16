@@ -42,7 +42,7 @@ export default function Projects() {
                 cardsObserver.unobserve(target);
             })
 
-        }, { threshold: .6 })
+        }, { threshold: .9 })
         for (let i = 0; i < cards.length; i++) cardsObserver.observe(cards[i])
 
     })
