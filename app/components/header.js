@@ -5,11 +5,11 @@ import { motion } from 'framer-motion'
 export default function Header({ homeRef, whyMeRef, contactRef, projectsRef, skillsRef }) {
     const liVarients = {
         hidden: {
-            y: -20,
+            x: 20,
             opacity: 0,
         },
         visible: {
-            y: 0,
+            x: 0,
             opacity: 1,
         }
     }
