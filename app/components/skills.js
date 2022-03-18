@@ -4,7 +4,7 @@ export default function Skills({ projectsRef }) {
     return (
         <div className="w-[100%] min-h-[100vh] mx-auto">
             <div className="mx-auto text-center h-fit">
-                <h1 className="w-[240px] h-[70px] bg-blue-600 text-4xl text-text_primary font-bold p-4 mx-auto rounded">🔨 المهارات</h1>
+                <h1 data-aos="zoom-out-up" className="w-[240px] h-[70px] bg-blue-600 text-4xl text-text_primary font-bold p-4 mx-auto rounded">🔨 المهارات</h1>
             </div>
             <div className="cards-container rtl">
                 <div data-aos="flip-left" className="skill-card">

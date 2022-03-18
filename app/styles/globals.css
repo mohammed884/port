@@ -41,6 +41,10 @@ header ul li a {
     @apply
     sm:w-[80%] lg:w-[40vh] xl:w-[42vh] p-3 rounded flex flex-col items-center justify-self-center
   }
+  .skill-card h3 {
+    @apply
+    lg:text-lg
+  }
   .cards-container {
     @apply
     w-[100%] 

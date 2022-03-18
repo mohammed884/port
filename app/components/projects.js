@@ -36,7 +36,7 @@ export default function Projects() {
     return (
         <div className="w-[85%] min-h-[60vh] mx-auto text-center">
             <div>
-                <h1 className="w-[280px] h-[70px] bg-blue-600 text-4xl text-text_primary font-bold p-3 mb-3 mx-auto rounded">🌏 مشاريعي</h1>
+                <h1 data-aos="zoom-out-up" className="w-[280px] h-[70px] bg-blue-600 text-4xl text-text_primary font-bold p-3 mb-3 mx-auto rounded">🌏 مشاريعي</h1>
             </div>
             <div className="md:w-[100%] mx-auto grid sm:grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 mt-5">
                 {

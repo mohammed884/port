@@ -2,7 +2,7 @@ import Image from "next/image"
 export default function Why_me() {
     return (
         <div className="w-[85%] min-h-[100vh] mx-auto text-center mt-5">
-            <h1 className="w-[240px] h-[70px] bg-blue-600 text-4xl text-text_primary font-bold p-4 mx-auto rounded">🤔 لماذا انا</h1>
+            <h1 data-aos="zoom-out-up" className="w-[240px] h-[70px] bg-blue-600 text-4xl text-text_primary font-bold p-4 mx-auto rounded">🤔 لماذا انا</h1>
             <div className="flex flex-col items-center mt-6">
                 <div data-aos="fade-left" className="why-me-card rtl">
                     <Image src="/svgs/step.svg" alt="Step By Step" width="350" height="350" responisve="true" />
@@ -39,7 +39,7 @@ export default function Why_me() {
                         <p className="text-slate-300 text-right">
                             لماذا سوف يكون منتجك النهائي جيد؟
                             لاني سوف استخدم احدث التقنيات مع مهاراتي من اجل التاكد من ان المنتج سوف يكون
-                            <span className="font-bold text-slate-100"> سريع ⚡ و امن 🔒</span>
+                            <span className="font-bold text-slate-100">🔒 سريع ⚡ و امن </span>
                         </p>
                     </div>
                 </div>
