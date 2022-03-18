@@ -9,7 +9,7 @@ export default function Header({ homeRef, whyMeRef, contactRef, projectsRef, ski
             opacity: 0,
         },
         visible: {
-            x: 0,
+            y: 0,
             opacity: 1,
         }
     }
