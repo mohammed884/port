@@ -4,7 +4,7 @@ export default function Why_me() {
         <div className="w-[85%] min-h-[100vh] mx-auto text-center mt-5">
             <h1 className="w-[240px] h-[70px] bg-blue-600 text-4xl text-text_primary font-bold p-4 mx-auto rounded">🤔 لماذا انا</h1>
             <div className="flex flex-col items-center mt-6">
-                <div className="why-me-card rtl">
+                <div data-aos="fade-left" className="why-me-card rtl">
                     <Image src="/svgs/step.svg" alt="Step By Step" width="350" height="350" responisve="true" />
                     <div className="w-[88%] text-right md:ml-3 rtl">
                         <h3 className="text-text_primary font-bold text-[1.25rem] sm:mt-5 md:mt-3 lg:mt-0 mb-2">
@@ -16,7 +16,7 @@ export default function Why_me() {
                         </p>
                     </div>
                 </div>
-                <div className="why-me-card rtl">
+                <div data-aos="fade-right" className="why-me-card rtl">
                     <img src="/svgs/dead-lines.svg" className="sm:w-[300px] sm:block lg:hidden" alt="Step By Step" loading="lazy" />
                     <div className="w-[88%] text-right md:ml-3">
                         <h3 className="text-text_primary font-bold text-[1.25rem] sm:mt-5 md:mt-3 lg:mt-0 mb-2">
@@ -29,7 +29,7 @@ export default function Why_me() {
                     </div>
                     <img src="/svgs/dead-lines.svg" className="sm:hidden lg:block lg:w-[300px]" alt="Dead Line Svg" loading="lazy" />
                 </div>
-                <div className="why-me-card">
+                <div data-aos="fade-left" className="why-me-card">
                     <Image src="/svgs/good-product.svg" alt="Step By Step" width="350" height="350" responisve="true" />
 
                     <div className="w-[88%] md:ml-3">

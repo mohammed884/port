@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 export default function Header({ homeRef, whyMeRef, contactRef, projectsRef, skillsRef }) {
     const liVarients = {
         hidden: {
-            x: -15,
+            y: -20,
             opacity: 0,
         },
         visible: {
@@ -97,8 +97,8 @@ export default function Header({ homeRef, whyMeRef, contactRef, projectsRef, ski
                     {
                         links.map(({ path, title }, index) =>
                         (
-                            <motion.li key={index} variants={liVarients} initial="hidden" animate="visible">
-                                <a
+                            <motion.li key={index} variants={liVarients} initial="hidden" animate="visible" >
+                                <a 
                                     href={path}
                                     className="hover:text-gray-400"
                                     onClick={() => scrollDown(index)}>

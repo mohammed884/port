@@ -39,7 +39,7 @@ header ul li a {
   }
   .skill-card {
     @apply
-    lg:w-[40vh] xl:w-[42vh] p-3 rounded flex flex-col items-center justify-self-center
+    sm:w-[80%] lg:w-[40vh] xl:w-[42vh] p-3 rounded flex flex-col items-center justify-self-center
   }
   .cards-container {
     @apply
@@ -55,9 +55,6 @@ header ul li a {
     text-slate-100 mx-auto mt-4 text-xl font-bold
   }
 }  
-.skill-card, .project {
-  transition: transform .2s ease-in-out;
-}
 
 .btn-loader {
     animation: rotate-btn .9s ease-in infinite;
