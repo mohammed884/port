@@ -43,7 +43,7 @@ header ul li a {
   }
   .skill-card h3 {
     @apply
-    lg:text-lg
+    lg:text-xl
   }
   .cards-container {
     @apply
