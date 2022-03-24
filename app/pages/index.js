@@ -67,10 +67,10 @@ export default function Home() {
           skillsRef={skillsRef}
         />
         {/* Links */}
-        <div className="sm:w-[20px] md:w-[27px] h-[35vh] flex flex-col justify-between fixed sm:right-2 md:right-5 top-[40%] ">
+        <div className="sm:w-[18px] md:w-[26px] lg:w-[29px] h-[35vh] flex flex-col justify-between fixed sm:right-2 md:right-5 top-[40%] ">
           {
             socialLinks.map(({ link, title, icon }, index) =>
-              <a href={link} title={title} rel="noreferrer" target="_blank" key={index} className="text-slate-200 hover:text-gray-400">
+              <a href={link} title={title} rel="noreferrer" target="_blank" key={index} className="text-slate-100 hover:text-gray-400">
                 <FontAwesomeIcon icon={icon} />
               </a>
             )
@@ -79,8 +79,8 @@ export default function Home() {
 
         <div className="rtl w-[85%] h-[100vh] flex sm:flex-col md:flex-row sm:justify-around md:justify-between items-center relative mx-auto" ref={homeRef}>
           <div className="sm:w-[93%] md:w-[44%] rtl">
-            <h1 className="sm:text-4xl md:text-4xl lg:text-4xl text-text_primary font-bold mb-2">
-              <span className="text-3xl font-thin">مرحبا بالجميع👋</span>
+            <h1 className="sm:text-4xl md:text-4xl lg:text-4xl text-blue-500 font-bold mb-2">
+              <span className="text-3xl font-thin text-text_primary">مرحبا بالجميع👋</span>
               <br />
               مطور و مصمم مواقع فريدة من نوعها
             </h1>
@@ -100,7 +100,7 @@ export default function Home() {
               initial="hidden"
               animate="visible"
               transition="transition"
-              className="text-blue-500 hover:text-blue-800 md:w-5 sm:w-[1rem] sm:mt-[3vh] lg:mt-[14vh]"
+              className="text-[#F02727] hover:text-red-700 md:w-5 sm:w-[1rem] sm:mt-[3vh] lg:mt-[14vh]"
               onClick={() => skillsRef.current.scrollIntoView({ behavior: 'smooth' })} >
               <FontAwesomeIcon icon={faArrowDown} className="cursor-pointer" />
             </motion.div>

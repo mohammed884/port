@@ -7,6 +7,7 @@ export default function Projects() {
             description: 'يوجد فيه الكثير من الميزات المهمة جدا مثل (تحليل بيانات, نظام الاسترداد بالنقاط, تقيم للمنتجات, تاكيد الحساب بالايميل, لوحة صدارة للمستخدمين, متوافق مع جميع الاجهزة) و المزيد  ',
             image: 'store_photo.jpg',
             source_code: 'https://github.com/mohammed884/nice-store',
+            is_private: true,
             link: ',',
             isAlive: false,
         },
@@ -15,6 +16,7 @@ export default function Projects() {
             description: 'الفائدة هذه النظام هو اقتراح منتجات بشكل عشوائي من اجل الالهام من ميزاته (تحديد عدد المنتجات عند جلبها, تحديد الخانات وعدد المنتجات من كل خانه عند جلبها, قدرة ترتيب المنتجات حسب عددهم, فلترة المنتجات بواسطة الخانات',
             image: 'suggestion-project.jpg',
             source_code: 'https://github.com/mohammed884/suggestion-projects',
+            is_private: true,
             link: ',',
             isAlive: false,
         },
@@ -35,12 +37,10 @@ export default function Projects() {
 
     return (
         <div className="w-[85%] min-h-[60vh] mx-auto text-center">
-            <div>
-                <h1 data-aos="zoom-out-up" className="w-[280px] h-[70px] bg-blue-600 text-4xl text-text_primary font-bold p-3 mb-3 mx-auto rounded">🌏 مشاريعي</h1>
-            </div>
-            <div className="md:w-[100%] mx-auto grid sm:grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 mt-5">
+            <h1 data-aos="zoom-out-up" className="w-[280px] h-[70px] bg-blue-600 text-4xl text-text_primary font-bold p-3 mx-auto rounded">🌏 مشاريعي</h1>
+            <div className="md:w-[100%] mx-auto grid sm:grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 mt-12">
                 {
-                    projects.map(({ title, image, isAlive, description, link, source_code }, index) =>
+                    projects.map(({ title, image, isAlive, description, link, source_code, is_private }, index) =>
                         <div key={index} data-aos="zoom-in" className="sm:w-[85%] md:w-[85%] lg:w-[65%] justify-self-center relative" onMouseLeave={() => isDescriptionAppear(false, index)} onMouseEnter={() => isDescriptionAppear(true, index)}>
                             <Image src={`/images/${image}`} className="rounded  aspect-square" alt={title} width="500" height="500" layout='responsive' />
                             <div className={`${index} w-[105%] h-[105%] left-[50%] text-center bg-bg_primary top-[50%] translate-x-[-50%] translate-y-[-50%] absolute opacity-0`}></div>
@@ -58,6 +58,8 @@ export default function Projects() {
                                         </button>
                                     }
                                     {
+                                        !is_private
+                                        &&
                                         source_code
                                         &&
                                         <button className="sm:w-[80px] sm:h-[30px] md:w-[100px] md:h-[35px] text-sm rounded border sm:mt-0 sm:ml-2 md:ml-2 md:mt-0 border-blue-500 hover:border-blue-600">
