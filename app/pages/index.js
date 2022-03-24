@@ -100,7 +100,7 @@ export default function Home() {
               initial="hidden"
               animate="visible"
               transition="transition"
-              className="text-[#F02727] hover:text-red-700 md:w-5 sm:w-[1rem] sm:mt-[3vh] lg:mt-[14vh]"
+              className="text-blue-500 hover:text-blue-600 md:w-5 sm:w-[1rem] sm:mt-[3vh] lg:mt-[14vh]"
               onClick={() => skillsRef.current.scrollIntoView({ behavior: 'smooth' })} >
               <FontAwesomeIcon icon={faArrowDown} className="cursor-pointer" />
             </motion.div>
