@@ -9,7 +9,7 @@ export default function Skills({ projectsRef }) {
                 <div className="cards-container rtl">
                     <div data-aos="fade-left" className="skill-card">
                         <div className="sm:w-[60%] md:w-[70%]">
-                            <Image src="/svgs/web-development.svg" className="mx-auto" width="500" height="500" responsive="true" />
+                            <Image src="/svgs/web-development.svg" className="mx-auto" width="500" height="500" responsive="true" alt="web development" />
                         </div>
                         <h3>برمجة المواقع</h3>
                         <div className="mt-3 sm:w-[80%] md:w-[100%] text-center">
@@ -22,7 +22,7 @@ export default function Skills({ projectsRef }) {
 
                     <div data-aos="fade-right" className="skill-card">
                         <div className="sm:w-[58%] md:w-[70%]">
-                            <Image src="/svgs/ui-ux.svg" width="300" height="300" responsive="true" />
+                            <Image src="/svgs/ui-ux.svg" width="300" height="300" responsive="true" alt="ui ux design" />
                         </div>
                         <h3>تصميم Ui/Ux</h3>
                         <p className="text-slate-300 mt-3 text-center">
@@ -39,7 +39,7 @@ export default function Skills({ projectsRef }) {
                 <div className="cards-container">
                     <div data-aos="fade-right" className="skill-card">
                         <div className="sm:w-[58%] md:w-[70%]">
-                            <Image src="/svgs/front-end.svg" width="300" height="300" responsive="true" />
+                            <Image src="/svgs/front-end.svg" width="300" height="300" responsive="true" alt="front end svg" />
                         </div>
                         <h3>واجه امامية</h3>
                         <div className="mt-3 sm:w-[80%] md:w-[100%] text-center">
@@ -54,7 +54,7 @@ export default function Skills({ projectsRef }) {
                     </div>
                     <div data-aos="fade-left" className="skill-card">
                         <div className="sm:w-[60%] md:w-[70%]">
-                            <Image src="/svgs/back-end.svg" className="mx-auto" width="500" height="500" responsive="true" />
+                            <Image src="/svgs/back-end.svg" className="mx-auto" width="500" height="500" responsive="true" alt="back end svg" />
                         </div>
                         <h3>واجه خلفيه</h3>
                         <div className="mt-3 sm:w-[80%] md:w-[100%] text-center">
